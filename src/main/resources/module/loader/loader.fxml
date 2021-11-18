@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+
+<!--<StackPane prefHeight="397.0" prefWidth="657.0" styleClass="foreground" stylesheets="@com/gn/module/loader/loader.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">-->
+
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="326.0" prefWidth="529.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="332.0" fitWidth="558.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../media/img/pet.png" />
+         </image>
+      </ImageView>
+   </children>
+</StackPane>

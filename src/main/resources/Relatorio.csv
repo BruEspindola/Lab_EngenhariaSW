@@ -1,0 +1,12 @@
+"data","descricao","hora","funcionario","valor","custo"
+"2021-11-16","tosa","14:06","catarina","3123.0","2123.0"
+"2021-11-14","banho","13:06","edi","1231.0","12312.0"
+"2021-11-19","unhas","18:27","rinald","1231.0","123.0"
+
+"data","hora","valor"
+"2021-11-12","22:23:23","132.0"
+"2021-11-12","22:23:44","102.0"
+"2021-11-16","21:21:58","114.0"
+
+"N. de Servicos","Valor Total Servicos","N. de Pedidos","Valor Total Pedidos","Valor Total Relatorio"
+"3","5585.0","3","348.0","5933.0"

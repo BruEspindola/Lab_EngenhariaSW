@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="569.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gn.controller.ProdutoController">
+    <children>
+        <HBox alignment="CENTER" layoutX="6.0" layoutY="7.0" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #00b6b6; -fx-border-color: #000000;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label text="Produto">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <AnchorPane fx:id="tfid" layoutX="26.0" layoutY="50.0" prefHeight="233.0" prefWidth="693.0" style="-fx-background-color: #ffffff;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+            <children>
+                <JFXTextField fx:id="tfID" disable="true" editable="false" labelFloat="true" layoutX="39.0" layoutY="24.0" promptText="id" AnchorPane.leftAnchor="20.0" />
+                <JFXTextField fx:id="tfPreco" labelFloat="true" layoutX="20.0" layoutY="172.0" prefHeight="25.0" prefWidth="171.0" promptText="Preço" />
+                <JFXTextField fx:id="tfNome" labelFloat="true" layoutX="20.0" layoutY="78.0" prefHeight="25.0" prefWidth="655.0" promptText="Nome" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+                <JFXTextField fx:id="tfCusto" labelFloat="true" layoutX="261.0" layoutY="172.0" prefHeight="25.0" prefWidth="171.0" promptText="Custo" />
+            </children></AnchorPane>
+        <AnchorPane layoutX="269.0" layoutY="283.0" prefHeight="286.0" prefWidth="693.0" style="-fx-background-color: #008b8b; -fx-border-color: #000000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="283.0">
+            <children>
+                <HBox alignment="CENTER" layoutX="2.0" layoutY="2.0" prefHeight="72.0" prefWidth="598.0" style="-fx-background-color: #eeeeeb;" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
+                    <children>
+                        <Button fx:id="btnNovo" mnemonicParsing="false" onAction="#incluirRegistro" text="Novo" />
+                        <Button fx:id="btnSalvar" layoutX="287.0" layoutY="48.0" mnemonicParsing="false" onAction="#salvarRegistro" text="Salvar">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnExcluir" layoutX="309.0" layoutY="48.0" mnemonicParsing="false" onAction="#excluirRegistro" text="Excluir">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+                <TextField fx:id="tfPesquisa" layoutX="12.0" layoutY="88.0" onKeyReleased="#filtrarRegistros" prefHeight="9.0" prefWidth="578.0" promptText="Filtro de Pesquisa" style="-fx-background-radius: 20; -fx-background-color: #FFFFFF;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="90.0" />
+                <TableView fx:id="tableView" layoutX="31.0" layoutY="128.0" onMouseClicked="#clicarTabela" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="130.0" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
